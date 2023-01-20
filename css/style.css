@@ -1,0 +1,71 @@
+ 
+ 
+
+
+body {
+    align-items: center;
+    background: #111132;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+.texto {
+    text-transform: uppercase;
+    background: #ffffaf;
+    text-align: center;
+    width: 25%;
+    border: 2px solid #ffffaf;
+    border-radius: 20px;
+    border-width: 8px;
+    padding: 10px;    
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    font-size: 28px;
+
+}
+  
+.teclado {
+    background: #ffffaf;
+    box-shadow: 3px 3px 0  rgb(0, 0, 0), 10px 10px 10px #000;
+    border-radius: 10px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+  }
+  
+.tecla {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 0 gray;
+    color: #0b0b74;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 120px;
+    text-align: center;
+    width: 120px;
+    margin: 15px
+}
+  
+.tecla:hover {
+    background-color: rgb(223, 220, 220);
+    border: red;
+    box-shadow: 3px 3px 0 rgb(36, 36, 36) ;
+    color: white;
+ }
+  
+
+.tecla:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px green;
+  }
+  
+
+.tecla:active:focus {
+    box-shadow: 3px 3px 0 rgb(0, 0, 0) inset, 1px 1px 10px yellow;
+  }
+  
+ 
